@@ -1,0 +1,11 @@
+/client/.import/
+/client/*.translation
+/client/export_presets.cfg
+/client/.mono/
+/client/hta-data/
+
+/server/.import/
+/server/*.translation
+/server/export_presets.cfg 
+/server/.mono/
+/server/hta-data/
