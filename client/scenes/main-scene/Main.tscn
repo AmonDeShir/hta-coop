@@ -61,7 +61,7 @@ mesh = SubResource( 6 )
 material/0 = null
 
 [node name="camera-root" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.78929, -1.0251 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.21399, -0.217841 )
 script = ExtResource( 4 )
 path_to_target = NodePath("../van")
 
@@ -70,10 +70,8 @@ path_to_target = NodePath("../van")
 [node name="v" type="Spatial" parent="camera-root/h"]
 
 [node name="camera" type="ClippedCamera" parent="camera-root/h/v"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.94088, 12.6217 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.437615, 15.2409 )
 process_mode = 1
-
-[node name="mouse-control-stay-delay" type="Timer" parent="camera-root"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.3158, 141.091 )
