@@ -1,0 +1,16 @@
+{
+  "name": "installer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "xml_to_json.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amon De Shir",
+  "license": "ISC",
+  "dependencies": {
+    "globby": "^13.1.1",
+    "xml-js": "^1.6.11"
+  }
+}
