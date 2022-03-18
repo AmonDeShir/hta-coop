@@ -8,10 +8,20 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Control",
+"class": "HpAndFuel",
+"language": "GDScript",
+"path": "res://ui/hp-and-fuel/hp-and-fuel.gd"
+} ]
+_global_script_class_icons={
+"HpAndFuel": ""
+}
+
 [application]
 
 config/name="HTA Client"
-run/main_scene="res://scenes/main-scene/Main.tscn"
+run/main_scene="res://scenes/lounge/lounge.tscn"
 config/icon="res://icon.png"
 
 [autoload]

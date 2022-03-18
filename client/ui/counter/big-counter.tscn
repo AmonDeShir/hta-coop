@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ui/number/numer_large.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ui/counter/big-counter.gd" type="Script" id=2]
+
+[node name="big-counter" type="Control"]
+anchor_left = 0.026
+anchor_top = 0.013
+anchor_right = 0.026
+anchor_bottom = 0.013
+margin_left = -26.624
+margin_top = -7.8
+margin_right = 44.376
+margin_bottom = 14.2
+rect_pivot_offset = Vector2( 35, 11 )
+script = ExtResource( 2 )
+color = Color( 1, 1, 1, 1 )
+
+[node name="thousand" parent="." instance=ExtResource( 1 )]
+anchor_left = -0.028169
+anchor_top = -0.454545
+anchor_right = -0.012544
+anchor_bottom = -0.427878
+margin_left = 14.0
+margin_top = 13.0
+margin_right = 14.0
+margin_bottom = 13.0
+
+[node name="hundred" parent="." instance=ExtResource( 1 )]
+anchor_left = 2.69014
+anchor_top = 0.0909091
+anchor_right = 2.70576
+anchor_bottom = 0.117576
+margin_left = -164.0
+margin_top = 1.0
+margin_right = -164.0
+margin_bottom = 1.0
+
+[node name="decad" parent="." instance=ExtResource( 1 )]
+anchor_left = 5.38028
+anchor_top = -1.61364
+anchor_right = 5.39591
+anchor_bottom = -1.58698
+margin_left = -340.0
+margin_top = 38.5
+margin_right = -340.0
+margin_bottom = 38.5
+
+[node name="digits" parent="." instance=ExtResource( 1 )]
+anchor_left = -576.944
+anchor_top = 255.771
+anchor_right = -576.929
+anchor_bottom = 255.798
+margin_left = 41020.0
+margin_top = -5623.96
+margin_right = 41020.0
+margin_bottom = -5623.96
+
+[node name="change" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+
+[connection signal="timeout" from="change" to="." method="_on_change_timeout"]

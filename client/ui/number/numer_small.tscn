@@ -1,0 +1,37 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_km.dds" type="Texture" id=1]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_7.dds" type="Texture" id=2]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_5.dds" type="Texture" id=3]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_6.dds" type="Texture" id=4]
+[ext_resource path="res://ui/number/numer.gd" type="Script" id=5]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_1.dds" type="Texture" id=6]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_8.dds" type="Texture" id=7]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_3.dds" type="Texture" id=8]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_0.dds" type="Texture" id=9]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_2.dds" type="Texture" id=10]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_9.dds" type="Texture" id=11]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_4.dds" type="Texture" id=12]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_m.dds" type="Texture" id=13]
+[ext_resource path="res://hta-data/if/ico/digitals/small/num_small_pts.dds" type="Texture" id=14]
+
+[node name="number_small" type="Control"]
+anchor_right = 0.0078125
+anchor_bottom = 0.0216667
+rect_pivot_offset = Vector2( 4, 6.5 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+numbers = [ ExtResource( 9 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 1 ), ExtResource( 13 ), ExtResource( 14 ) ]
+
+[node name="pivot" type="Control" parent="."]
+anchor_left = 0.687
+anchor_right = 0.687
+margin_left = -5.496
+margin_right = 2.504
+margin_bottom = 13.0
+
+[node name="NumLarge0" type="Sprite" parent="pivot"]
+position = Vector2( 4, 8 )
+texture = ExtResource( 9 )
