@@ -9,3 +9,6 @@
 /server/export_presets.cfg 
 /server/.mono/
 /server/hta-data/
+
+/scripts/node_modules
+/build/
